@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A2547D7294647C300DE2396 /* MusubiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2547D6294647C300DE2396 /* MusubiApp.swift */; };
+		1A2547D9294647C300DE2396 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2547D8294647C300DE2396 /* ContentView.swift */; };
+		1A2547DB294647C400DE2396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2547DA294647C400DE2396 /* Assets.xcassets */; };
+		1A2547DE294647C400DE2396 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2547DD294647C400DE2396 /* Preview Assets.xcassets */; };
+		1A2547E0294647C400DE2396 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2547DF294647C400DE2396 /* Persistence.swift */; };
+		1A2547E3294647C400DE2396 /* Musubi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A2547E1294647C400DE2396 /* Musubi.xcdatamodeld */; };
+		1A2547EE294647C400DE2396 /* MusubiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2547ED294647C400DE2396 /* MusubiTests.swift */; };
+		1A2547F8294647C400DE2396 /* MusubiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2547F7294647C400DE2396 /* MusubiUITests.swift */; };
+		1A2547FA294647C400DE2396 /* MusubiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2547F9294647C400DE2396 /* MusubiUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A2547EA294647C400DE2396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A2547CB294647C300DE2396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A2547D2294647C300DE2396;
+			remoteInfo = Musubi;
+		};
+		1A2547F4294647C400DE2396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A2547CB294647C300DE2396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A2547D2294647C300DE2396;
+			remoteInfo = Musubi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A2547D3294647C300DE2396 /* Musubi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musubi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2547D6294647C300DE2396 /* MusubiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusubiApp.swift; sourceTree = "<group>"; };
+		1A2547D8294647C300DE2396 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A2547DA294647C400DE2396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A2547DD294647C400DE2396 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A2547DF294647C400DE2396 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		1A2547E2294647C400DE2396 /* Musubi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Musubi.xcdatamodel; sourceTree = "<group>"; };
+		1A2547E4294647C400DE2396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A2547E9294647C400DE2396 /* MusubiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusubiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2547ED294647C400DE2396 /* MusubiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusubiTests.swift; sourceTree = "<group>"; };
+		1A2547F3294647C400DE2396 /* MusubiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusubiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2547F7294647C400DE2396 /* MusubiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusubiUITests.swift; sourceTree = "<group>"; };
+		1A2547F9294647C400DE2396 /* MusubiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusubiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A2547D0294647C300DE2396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A2547E6294647C400DE2396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A2547F0294647C400DE2396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A2547CA294647C300DE2396 = {
+			isa = PBXGroup;
+			children = (
+				1A2547D5294647C300DE2396 /* Musubi */,
+				1A2547EC294647C400DE2396 /* MusubiTests */,
+				1A2547F6294647C400DE2396 /* MusubiUITests */,
+				1A2547D4294647C300DE2396 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A2547D4294647C300DE2396 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A2547D3294647C300DE2396 /* Musubi.app */,
+				1A2547E9294647C400DE2396 /* MusubiTests.xctest */,
+				1A2547F3294647C400DE2396 /* MusubiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A2547D5294647C300DE2396 /* Musubi */ = {
+			isa = PBXGroup;
+			children = (
+				1A2547D6294647C300DE2396 /* MusubiApp.swift */,
+				1A2547D8294647C300DE2396 /* ContentView.swift */,
+				1A2547DA294647C400DE2396 /* Assets.xcassets */,
+				1A2547DF294647C400DE2396 /* Persistence.swift */,
+				1A2547E4294647C400DE2396 /* Info.plist */,
+				1A2547E1294647C400DE2396 /* Musubi.xcdatamodeld */,
+				1A2547DC294647C400DE2396 /* Preview Content */,
+			);
+			path = Musubi;
+			sourceTree = "<group>";
+		};
+		1A2547DC294647C400DE2396 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1A2547DD294647C400DE2396 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A2547EC294647C400DE2396 /* MusubiTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A2547ED294647C400DE2396 /* MusubiTests.swift */,
+			);
+			path = MusubiTests;
+			sourceTree = "<group>";
+		};
+		1A2547F6294647C400DE2396 /* MusubiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1A2547F7294647C400DE2396 /* MusubiUITests.swift */,
+				1A2547F9294647C400DE2396 /* MusubiUITestsLaunchTests.swift */,
+			);
+			path = MusubiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A2547D2294647C300DE2396 /* Musubi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A2547FD294647C400DE2396 /* Build configuration list for PBXNativeTarget "Musubi" */;
+			buildPhases = (
+				1A2547CF294647C300DE2396 /* Sources */,
+				1A2547D0294647C300DE2396 /* Frameworks */,
+				1A2547D1294647C300DE2396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Musubi;
+			productName = Musubi;
+			productReference = 1A2547D3294647C300DE2396 /* Musubi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A2547E8294647C400DE2396 /* MusubiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A254800294647C400DE2396 /* Build configuration list for PBXNativeTarget "MusubiTests" */;
+			buildPhases = (
+				1A2547E5294647C400DE2396 /* Sources */,
+				1A2547E6294647C400DE2396 /* Frameworks */,
+				1A2547E7294647C400DE2396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A2547EB294647C400DE2396 /* PBXTargetDependency */,
+			);
+			name = MusubiTests;
+			productName = MusubiTests;
+			productReference = 1A2547E9294647C400DE2396 /* MusubiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1A2547F2294647C400DE2396 /* MusubiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A254803294647C400DE2396 /* Build configuration list for PBXNativeTarget "MusubiUITests" */;
+			buildPhases = (
+				1A2547EF294647C400DE2396 /* Sources */,
+				1A2547F0294647C400DE2396 /* Frameworks */,
+				1A2547F1294647C400DE2396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A2547F5294647C400DE2396 /* PBXTargetDependency */,
+			);
+			name = MusubiUITests;
+			productName = MusubiUITests;
+			productReference = 1A2547F3294647C400DE2396 /* MusubiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A2547CB294647C300DE2396 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					1A2547D2294647C300DE2396 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					1A2547E8294647C400DE2396 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 1A2547D2294647C300DE2396;
+					};
+					1A2547F2294647C400DE2396 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 1A2547D2294647C300DE2396;
+					};
+				};
+			};
+			buildConfigurationList = 1A2547CE294647C300DE2396 /* Build configuration list for PBXProject "Musubi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A2547CA294647C300DE2396;
+			productRefGroup = 1A2547D4294647C300DE2396 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A2547D2294647C300DE2396 /* Musubi */,
+				1A2547E8294647C400DE2396 /* MusubiTests */,
+				1A2547F2294647C400DE2396 /* MusubiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A2547D1294647C300DE2396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2547DE294647C400DE2396 /* Preview Assets.xcassets in Resources */,
+				1A2547DB294647C400DE2396 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A2547E7294647C400DE2396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A2547F1294647C400DE2396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A2547CF294647C300DE2396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2547E3294647C400DE2396 /* Musubi.xcdatamodeld in Sources */,
+				1A2547E0294647C400DE2396 /* Persistence.swift in Sources */,
+				1A2547D9294647C300DE2396 /* ContentView.swift in Sources */,
+				1A2547D7294647C300DE2396 /* MusubiApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A2547E5294647C400DE2396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2547EE294647C400DE2396 /* MusubiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A2547EF294647C400DE2396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2547F8294647C400DE2396 /* MusubiUITests.swift in Sources */,
+				1A2547FA294647C400DE2396 /* MusubiUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A2547EB294647C400DE2396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A2547D2294647C300DE2396 /* Musubi */;
+			targetProxy = 1A2547EA294647C400DE2396 /* PBXContainerItemProxy */;
+		};
+		1A2547F5294647C400DE2396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A2547D2294647C300DE2396 /* Musubi */;
+			targetProxy = 1A2547F4294647C400DE2396 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A2547FB294647C400DE2396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A2547FC294647C400DE2396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A2547FE294647C400DE2396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Musubi/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.Musubi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A2547FF294647C400DE2396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Musubi/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.Musubi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A254801294647C400DE2396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.MusubiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Musubi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Musubi";
+			};
+			name = Debug;
+		};
+		1A254802294647C400DE2396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.MusubiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Musubi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Musubi";
+			};
+			name = Release;
+		};
+		1A254804294647C400DE2396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.MusubiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Musubi;
+			};
+			name = Debug;
+		};
+		1A254805294647C400DE2396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.MusubiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Musubi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A2547CE294647C300DE2396 /* Build configuration list for PBXProject "Musubi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A2547FB294647C400DE2396 /* Debug */,
+				1A2547FC294647C400DE2396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A2547FD294647C400DE2396 /* Build configuration list for PBXNativeTarget "Musubi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A2547FE294647C400DE2396 /* Debug */,
+				1A2547FF294647C400DE2396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A254800294647C400DE2396 /* Build configuration list for PBXNativeTarget "MusubiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A254801294647C400DE2396 /* Debug */,
+				1A254802294647C400DE2396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A254803294647C400DE2396 /* Build configuration list for PBXNativeTarget "MusubiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A254804294647C400DE2396 /* Debug */,
+				1A254805294647C400DE2396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A2547E1294647C400DE2396 /* Musubi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A2547E2294647C400DE2396 /* Musubi.xcdatamodel */,
+			);
+			currentVersion = 1A2547E2294647C400DE2396 /* Musubi.xcdatamodel */;
+			path = Musubi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1A2547CB294647C300DE2396 /* Project object */;
+}
