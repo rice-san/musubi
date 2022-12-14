@@ -16,6 +16,9 @@
 		1A2547EE294647C400DE2396 /* MusubiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2547ED294647C400DE2396 /* MusubiTests.swift */; };
 		1A2547F8294647C400DE2396 /* MusubiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2547F7294647C400DE2396 /* MusubiUITests.swift */; };
 		1A2547FA294647C400DE2396 /* MusubiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2547F9294647C400DE2396 /* MusubiUITestsLaunchTests.swift */; };
+		1A25480729464A3100DE2396 /* MusubiCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A25480629464A3100DE2396 /* MusubiCard.swift */; };
+		1A25480929465A8800DE2396 /* WordCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A25480829465A8800DE2396 /* WordCard.swift */; };
+		1AF75922294947DF00811B5A /* ServiceFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF75921294947DF00811B5A /* ServiceFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		1A2547F3294647C400DE2396 /* MusubiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusubiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A2547F7294647C400DE2396 /* MusubiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusubiUITests.swift; sourceTree = "<group>"; };
 		1A2547F9294647C400DE2396 /* MusubiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusubiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1A25480629464A3100DE2396 /* MusubiCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusubiCard.swift; sourceTree = "<group>"; };
+		1A25480829465A8800DE2396 /* WordCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCard.swift; sourceTree = "<group>"; };
+		1AF75921294947DF00811B5A /* ServiceFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				1A2547D6294647C300DE2396 /* MusubiApp.swift */,
+				1A25480829465A8800DE2396 /* WordCard.swift */,
+				1AF75921294947DF00811B5A /* ServiceFunctions.swift */,
 				1A2547D8294647C300DE2396 /* ContentView.swift */,
 				1A2547DA294647C400DE2396 /* Assets.xcassets */,
 				1A2547DF294647C400DE2396 /* Persistence.swift */,
 				1A2547E4294647C400DE2396 /* Info.plist */,
 				1A2547E1294647C400DE2396 /* Musubi.xcdatamodeld */,
 				1A2547DC294647C400DE2396 /* Preview Content */,
+				1A25480629464A3100DE2396 /* MusubiCard.swift */,
 			);
 			path = Musubi;
 			sourceTree = "<group>";
@@ -266,9 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A2547E3294647C400DE2396 /* Musubi.xcdatamodeld in Sources */,
+				1A25480729464A3100DE2396 /* MusubiCard.swift in Sources */,
 				1A2547E0294647C400DE2396 /* Persistence.swift in Sources */,
+				1A25480929465A8800DE2396 /* WordCard.swift in Sources */,
 				1A2547D9294647C300DE2396 /* ContentView.swift in Sources */,
 				1A2547D7294647C300DE2396 /* MusubiApp.swift in Sources */,
+				1AF75922294947DF00811B5A /* ServiceFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Musubi/Preview Content\"";
+				DEVELOPMENT_TEAM = 28KYYH4JA3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -455,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Musubi/Preview Content\"";
+				DEVELOPMENT_TEAM = 28KYYH4JA3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
