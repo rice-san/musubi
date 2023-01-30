@@ -8,13 +8,7 @@
 import Foundation
 
 class Musubi: ObservableObject {
-    @Published var key: String
-    {
-        didSet{
-            self.safe = false
-        }
-    }
-    @Published var safe = false
+    var key: String
     var musubi: Dictionary<String, Musubi>
     
     init(key: String) {
@@ -32,22 +26,20 @@ class Musubi: ObservableObject {
 
 class Word: Musubi {
     
-    
-    var yomiOnly = false
     var special = false
     
-    @Published var yomi: Array<String> {
-        didSet {
-            self.safe = true
-        }
-    } // Yomi should be stored one string per Kanji
+    var yomi: Array<String> // Yomi should be stored one string per Kanji
     var yomikata: String {  // "Yomikata" can be used to get the reading as one string.
         get {
             var result = ""
-            for string in yomi {
-                result = result + string
+            for i in 0..<key.count {
+                result = result + (yomi[i] != "" ? yomi[i] : String(Array(key)[i])) // If there is no yomi (e.g. okurigana) use the hiragana from the key word
             }
-            return result
+            if result.isHiragana {
+                return result
+            }else{
+                return ""   // If the yomikata is not complete, don't send a partial one.
+            }
         }
         set(kata) {
             if yomi.count > 1 {
@@ -57,7 +49,7 @@ class Word: Musubi {
             yomi[0] = kata // There are no kanji, so put all the kanji into one word. If it's a one-kanji word, this will have the same effect so no issue.
         }
     }
-    @Published var meaning: String     // Store the meaning of the word
+    var meaning: String     // Store the meaning of the word
     override init(key: String) {
         //TODO: check string is actually kanji characters
         self.yomi = []
@@ -68,5 +60,11 @@ class Word: Musubi {
         self.yomi = yomi
         self.meaning = meaning
         super.init(key: key)
+    }
+}
+
+class Kanji: Musubi {
+    override init(key: String) {
+        super.init(key: String(Character(key)))
     }
 }

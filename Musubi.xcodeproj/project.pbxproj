@@ -18,6 +18,7 @@
 		1A2547FA294647C400DE2396 /* MusubiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2547F9294647C400DE2396 /* MusubiUITestsLaunchTests.swift */; };
 		1A25480729464A3100DE2396 /* MusubiCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A25480629464A3100DE2396 /* MusubiCard.swift */; };
 		1A25480929465A8800DE2396 /* WordCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A25480829465A8800DE2396 /* WordCard.swift */; };
+		1A41FCCA2950DB63003BBC69 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41FCC92950DB63003BBC69 /* DataStorage.swift */; };
 		1AF75922294947DF00811B5A /* ServiceFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF75921294947DF00811B5A /* ServiceFunctions.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		1A2547F9294647C400DE2396 /* MusubiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusubiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1A25480629464A3100DE2396 /* MusubiCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusubiCard.swift; sourceTree = "<group>"; };
 		1A25480829465A8800DE2396 /* WordCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCard.swift; sourceTree = "<group>"; };
+		1A41FCC92950DB63003BBC69 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		1AF75921294947DF00811B5A /* ServiceFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 		1A2547D5294647C300DE2396 /* Musubi */ = {
 			isa = PBXGroup;
 			children = (
+				1A41FCC92950DB63003BBC69 /* DataStorage.swift */,
 				1A2547D6294647C300DE2396 /* MusubiApp.swift */,
 				1A25480829465A8800DE2396 /* WordCard.swift */,
 				1AF75921294947DF00811B5A /* ServiceFunctions.swift */,
@@ -277,6 +280,7 @@
 				1A2547E3294647C400DE2396 /* Musubi.xcdatamodeld in Sources */,
 				1A25480729464A3100DE2396 /* MusubiCard.swift in Sources */,
 				1A2547E0294647C400DE2396 /* Persistence.swift in Sources */,
+				1A41FCCA2950DB63003BBC69 /* DataStorage.swift in Sources */,
 				1A25480929465A8800DE2396 /* WordCard.swift in Sources */,
 				1A2547D9294647C300DE2396 /* ContentView.swift in Sources */,
 				1A2547D7294647C300DE2396 /* MusubiApp.swift in Sources */,
