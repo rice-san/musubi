@@ -23,8 +23,22 @@ class Musubi: ObservableObject {
     }
 }
 
-
+// Object for storing words and the data connected to them.
 class Word: Musubi {
+    
+    // Timestamp information
+    let createdTime = Date.now
+    var lastEdited = Date.now
+    
+    var kanji: Array<Character> {
+        get {
+            var a = Array<Character>()
+            for e in key {
+                a.append(e)
+            }
+            return a
+        }
+    }
     
     var special = false
     
@@ -46,7 +60,7 @@ class Word: Musubi {
                 // If there is already a formatted yomikata, this setter should not be used.
                 return
             }
-            yomi[0] = kata // There are no kanji, so put all the kanji into one word. If it's a one-kanji word, this will have the same effect so no issue.
+            yomi[0] = kata // There are no kanji, so put all the kana into one word. If it's a one-kanji word, this will have the same effect so no issue.
         }
     }
     var meaning: String     // Store the meaning of the word
@@ -63,8 +77,3 @@ class Word: Musubi {
     }
 }
 
-class Kanji: Musubi {
-    override init(key: String) {
-        super.init(key: String(Character(key)))
-    }
-}

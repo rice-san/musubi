@@ -12,7 +12,9 @@ import UIKit
 fileprivate func noac() {}
 fileprivate var noAction = noac
 
-var thought = Word(key: "巡回監督者よ", yomi: ["じゅん","かい", "かん", "とく", "しゃ", ""], meaning: "connect")
+//TODO: Add toggles
+
+var thought = Word(key: "巡回監督者", yomi: ["じゅん","かい", "かん", "とく", "しゃ", ""], meaning: "circuit overseer")
 
 
 struct WordCard: View {
@@ -21,6 +23,7 @@ struct WordCard: View {
     @FocusState var editing: Bool
     @State var dummy = ""
     @State var dummyArray = [""]
+    @State var special = false
     @State var word: Word
     @State var key: String
     @State var yomi: Array<String>
@@ -30,7 +33,17 @@ struct WordCard: View {
     // Body for the static word card
     var body: some View {
         ZStack{
+            
             VStack(alignment: .center) {
+                VStack(alignment: .trailing) {
+                    Toggle(isOn: $special) {
+                        Label("", systemImage: "pencil.and.ellipsis.rectangle")
+                    }.toggleStyle(.button).frame(width: 40,alignment: .bottomLeading).padding()
+                }.frame(
+                    minWidth: 0,
+                    maxWidth: .infinity,
+                    alignment: .topTrailing
+                  )
                 Spacer()
                 // Create a HStack to pair the character to its reading.
                 HStack {
@@ -97,7 +110,7 @@ struct YomiView: View {
         VStack(alignment: .center){
             ForEach(0..<Array(key).count, id: \.self) { i in
                 TextField(
-                    String(Array(key)[i]).isHiragana ? " " : "〇",
+                    String(Array(key)[i]).isHiragana ? " " : "-",
                     text: i < yomi.count ? $yomi[i] : $dummy,
                     axis: .vertical)
                     .font(.system(size: 24))

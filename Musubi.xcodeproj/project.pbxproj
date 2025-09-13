@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0DCB762ACCD22500A3387D /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0DCB752ACCD22500A3387D /* Core.swift */; };
+		1A0DCB782AD0B63E00A3387D /* FragmentManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0DCB772AD0B63E00A3387D /* FragmentManagerView.swift */; };
+		1A0DCB7A2AD0B6AE00A3387D /* FragmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0DCB792AD0B6AE00A3387D /* FragmentManager.swift */; };
 		1A2547D7294647C300DE2396 /* MusubiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2547D6294647C300DE2396 /* MusubiApp.swift */; };
 		1A2547D9294647C300DE2396 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2547D8294647C300DE2396 /* ContentView.swift */; };
 		1A2547DB294647C400DE2396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2547DA294647C400DE2396 /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 		1A25480729464A3100DE2396 /* MusubiCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A25480629464A3100DE2396 /* MusubiCard.swift */; };
 		1A25480929465A8800DE2396 /* WordCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A25480829465A8800DE2396 /* WordCard.swift */; };
 		1A41FCCA2950DB63003BBC69 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41FCC92950DB63003BBC69 /* DataStorage.swift */; };
+		1A7664D729C13667008EAADD /* WordEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7664D629C13667008EAADD /* WordEditorView.swift */; };
+		1AB0FCE22E75024800D29287 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0FCE12E75024100D29287 /* Words.swift */; };
+		1AD23FEE298C628300F3346B /* Conjugator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD23FED298C628300F3346B /* Conjugator.swift */; };
 		1AF75922294947DF00811B5A /* ServiceFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF75921294947DF00811B5A /* ServiceFunctions.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0DCB752ACCD22500A3387D /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		1A0DCB772AD0B63E00A3387D /* FragmentManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentManagerView.swift; sourceTree = "<group>"; };
+		1A0DCB792AD0B6AE00A3387D /* FragmentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentManager.swift; sourceTree = "<group>"; };
 		1A2547D3294647C300DE2396 /* Musubi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musubi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A2547D6294647C300DE2396 /* MusubiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusubiApp.swift; sourceTree = "<group>"; };
 		1A2547D8294647C300DE2396 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +65,9 @@
 		1A25480629464A3100DE2396 /* MusubiCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusubiCard.swift; sourceTree = "<group>"; };
 		1A25480829465A8800DE2396 /* WordCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCard.swift; sourceTree = "<group>"; };
 		1A41FCC92950DB63003BBC69 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		1A7664D629C13667008EAADD /* WordEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEditorView.swift; sourceTree = "<group>"; };
+		1AB0FCE12E75024100D29287 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		1AD23FED298C628300F3346B /* Conjugator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conjugator.swift; sourceTree = "<group>"; };
 		1AF75921294947DF00811B5A /* ServiceFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +122,7 @@
 				1A41FCC92950DB63003BBC69 /* DataStorage.swift */,
 				1A2547D6294647C300DE2396 /* MusubiApp.swift */,
 				1A25480829465A8800DE2396 /* WordCard.swift */,
+				1A7664D629C13667008EAADD /* WordEditorView.swift */,
 				1AF75921294947DF00811B5A /* ServiceFunctions.swift */,
 				1A2547D8294647C300DE2396 /* ContentView.swift */,
 				1A2547DA294647C400DE2396 /* Assets.xcassets */,
@@ -118,6 +131,11 @@
 				1A2547E1294647C400DE2396 /* Musubi.xcdatamodeld */,
 				1A2547DC294647C400DE2396 /* Preview Content */,
 				1A25480629464A3100DE2396 /* MusubiCard.swift */,
+				1AB0FCE12E75024100D29287 /* Words.swift */,
+				1AD23FED298C628300F3346B /* Conjugator.swift */,
+				1A0DCB752ACCD22500A3387D /* Core.swift */,
+				1A0DCB772AD0B63E00A3387D /* FragmentManagerView.swift */,
+				1A0DCB792AD0B6AE00A3387D /* FragmentManager.swift */,
 			);
 			path = Musubi;
 			sourceTree = "<group>";
@@ -211,7 +229,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					1A2547D2294647C300DE2396 = {
 						CreatedOnToolsVersion = 14.1;
@@ -279,12 +297,18 @@
 			files = (
 				1A2547E3294647C400DE2396 /* Musubi.xcdatamodeld in Sources */,
 				1A25480729464A3100DE2396 /* MusubiCard.swift in Sources */,
+				1A0DCB7A2AD0B6AE00A3387D /* FragmentManager.swift in Sources */,
 				1A2547E0294647C400DE2396 /* Persistence.swift in Sources */,
+				1A0DCB762ACCD22500A3387D /* Core.swift in Sources */,
+				1A7664D729C13667008EAADD /* WordEditorView.swift in Sources */,
 				1A41FCCA2950DB63003BBC69 /* DataStorage.swift in Sources */,
+				1AB0FCE22E75024800D29287 /* Words.swift in Sources */,
+				1A0DCB782AD0B63E00A3387D /* FragmentManagerView.swift in Sources */,
 				1A25480929465A8800DE2396 /* WordCard.swift in Sources */,
 				1A2547D9294647C300DE2396 /* ContentView.swift in Sources */,
 				1A2547D7294647C300DE2396 /* MusubiApp.swift in Sources */,
 				1AF75922294947DF00811B5A /* ServiceFunctions.swift in Sources */,
+				1AD23FEE298C628300F3346B /* Conjugator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +381,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -371,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -417,6 +442,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -425,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -496,12 +522,12 @@
 		1A254801294647C400DE2396 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 28KYYH4JA3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rice.MusubiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -515,12 +541,12 @@
 		1A254802294647C400DE2396 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 28KYYH4JA3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rice.MusubiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,7 +560,6 @@
 		1A254804294647C400DE2396 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -551,7 +576,6 @@
 		1A254805294647C400DE2396 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -13,7 +13,8 @@ struct MusubiApp: App {
     var word = Word(key: "結び", yomi: ["むす", ""], meaning: "union")
     var body: some Scene {
         WindowGroup {
-            WordCard(word: word, key: word.key, yomi: word.yomi, meaning: word.meaning)
+            //WordCard(word: word, key: word.key, yomi: word.yomi, meaning: word.meaning)
+            FragmentManagerView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
