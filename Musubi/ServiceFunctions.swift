@@ -29,23 +29,29 @@ extension String {
     
     var splitIntoMorae: [String] {
         get{
-            if self.isJapanese {
+            if self.isKana {
                 let smallKana: Set<Character> = ["ょ", "ゃ", "ゅ", "ョ", "ャ", "ュ", "ぁ", "ぉ", "ぃ", "ぇ", "ァ", "ィ", "ェ", "ォ"] // Set of small characters
                 var result: [String] = []
                 var current: String = ""
-                for c in self {
-                    if smallKana.contains(c) {
-                        if !current.isEmpty {
+                for c in Array(self) {
+                    if !current.isEmpty {
+                        print("current is not empty")
+                        if smallKana.contains(c) {
                             current.append(c)
+                            print("contains small kana, current is now \(current)")
                             result.append(current)
                             current = ""
                         }else{
-                            result.append(String(c))
+                            result.append(current)
+                            print("contains no small kana, current is now \(current)")
+                            current = String(c)
                         }
                     }else{
                         current = String(c)
                     }
                 }
+                
+                result.append(current) // Add on the last lost mora
                 return result
             }else{
                 return []

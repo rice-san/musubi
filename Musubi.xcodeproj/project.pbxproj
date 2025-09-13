@@ -24,6 +24,10 @@
 		1A41FCCA2950DB63003BBC69 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41FCC92950DB63003BBC69 /* DataStorage.swift */; };
 		1A7664D729C13667008EAADD /* WordEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7664D629C13667008EAADD /* WordEditorView.swift */; };
 		1AB0FCE22E75024800D29287 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0FCE12E75024100D29287 /* Words.swift */; };
+		1AB0FCE42E751A0800D29287 /* SRS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0FCE32E751A0600D29287 /* SRS.swift */; };
+		1AB0FCE62E751EF500D29287 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0FCE52E751EEF00D29287 /* UserPreferences.swift */; };
+		1AB0FCE82E75ED6E00D29287 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0FCE72E75ED6900D29287 /* JSON.swift */; };
+		1AB0FCEA2E75EE4D00D29287 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0FCE92E75EE4D00D29287 /* WordView.swift */; };
 		1AD23FEE298C628300F3346B /* Conjugator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD23FED298C628300F3346B /* Conjugator.swift */; };
 		1AF75922294947DF00811B5A /* ServiceFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF75921294947DF00811B5A /* ServiceFunctions.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +71,11 @@
 		1A41FCC92950DB63003BBC69 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		1A7664D629C13667008EAADD /* WordEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEditorView.swift; sourceTree = "<group>"; };
 		1AB0FCE12E75024100D29287 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		1AB0FCE32E751A0600D29287 /* SRS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRS.swift; sourceTree = "<group>"; };
+		1AB0FCE52E751EEF00D29287 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		1AB0FCE72E75ED6900D29287 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		1AB0FCE92E75EE4D00D29287 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
+		1AB0FCEC2E7600DB00D29287 /* Scratchpad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scratchpad.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1AD23FED298C628300F3346B /* Conjugator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conjugator.swift; sourceTree = "<group>"; };
 		1AF75921294947DF00811B5A /* ServiceFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +128,8 @@
 		1A2547D5294647C300DE2396 /* Musubi */ = {
 			isa = PBXGroup;
 			children = (
+				1AB0FCE52E751EEF00D29287 /* UserPreferences.swift */,
+				1AB0FCEC2E7600DB00D29287 /* Scratchpad.playground */,
 				1A41FCC92950DB63003BBC69 /* DataStorage.swift */,
 				1A2547D6294647C300DE2396 /* MusubiApp.swift */,
 				1A25480829465A8800DE2396 /* WordCard.swift */,
@@ -132,6 +143,9 @@
 				1A2547DC294647C400DE2396 /* Preview Content */,
 				1A25480629464A3100DE2396 /* MusubiCard.swift */,
 				1AB0FCE12E75024100D29287 /* Words.swift */,
+				1AB0FCE92E75EE4D00D29287 /* WordView.swift */,
+				1AB0FCE72E75ED6900D29287 /* JSON.swift */,
+				1AB0FCE32E751A0600D29287 /* SRS.swift */,
 				1AD23FED298C628300F3346B /* Conjugator.swift */,
 				1A0DCB752ACCD22500A3387D /* Core.swift */,
 				1A0DCB772AD0B63E00A3387D /* FragmentManagerView.swift */,
@@ -296,17 +310,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A2547E3294647C400DE2396 /* Musubi.xcdatamodeld in Sources */,
+				1AB0FCE62E751EF500D29287 /* UserPreferences.swift in Sources */,
 				1A25480729464A3100DE2396 /* MusubiCard.swift in Sources */,
 				1A0DCB7A2AD0B6AE00A3387D /* FragmentManager.swift in Sources */,
 				1A2547E0294647C400DE2396 /* Persistence.swift in Sources */,
 				1A0DCB762ACCD22500A3387D /* Core.swift in Sources */,
 				1A7664D729C13667008EAADD /* WordEditorView.swift in Sources */,
+				1AB0FCE42E751A0800D29287 /* SRS.swift in Sources */,
 				1A41FCCA2950DB63003BBC69 /* DataStorage.swift in Sources */,
 				1AB0FCE22E75024800D29287 /* Words.swift in Sources */,
 				1A0DCB782AD0B63E00A3387D /* FragmentManagerView.swift in Sources */,
 				1A25480929465A8800DE2396 /* WordCard.swift in Sources */,
 				1A2547D9294647C300DE2396 /* ContentView.swift in Sources */,
 				1A2547D7294647C300DE2396 /* MusubiApp.swift in Sources */,
+				1AB0FCEA2E75EE4D00D29287 /* WordView.swift in Sources */,
+				1AB0FCE82E75ED6E00D29287 /* JSON.swift in Sources */,
 				1AF75922294947DF00811B5A /* ServiceFunctions.swift in Sources */,
 				1AD23FEE298C628300F3346B /* Conjugator.swift in Sources */,
 			);

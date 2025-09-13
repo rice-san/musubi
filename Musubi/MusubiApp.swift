@@ -10,11 +10,12 @@ import SwiftUI
 @main
 struct MusubiApp: App {
     let persistenceController = PersistenceController.shared
-    var word = Word(key: "結び", yomi: ["むす", ""], meaning: "union")
+    var word = Words(word: "巡回監督", readings: ["たすまきてんぴゃっく", "かい", "かん", "とく"], meaning: "circuit overseer")
+    
     var body: some Scene {
         WindowGroup {
             //WordCard(word: word, key: word.key, yomi: word.yomi, meaning: word.meaning)
-            FragmentManagerView()
+            WordView(word: word)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
